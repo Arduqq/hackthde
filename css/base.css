@@ -1,0 +1,330 @@
+---
+---
+
+h1 { font-family: Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, monospace; font-size: 1.8vw; font-style: normal; font-variant: normal; font-weight: 700; line-height: 6vw; } 
+h2 { font-family: Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, monospace; font-size: 1.8vw; font-style: normal; font-variant: normal; font-weight: 700; line-height: 5vw; } 
+h3 { font-family: Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, monospace; font-size: 1.6vw; font-style: normal; font-variant: normal; font-weight: 700; line-height: 4vw; } 
+p { font-family: Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, monospace; font-size: 1vw; font-style: normal; font-variant: normal; font-weight: 400; line-height: 2vw;text-align: justify;text-justify: inter-word; }
+blockquote { font-family: Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, monospace; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 3vw; } 
+pre { font-family: Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, monospace; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 1vw; }
+
+
+html, body {
+	display:flex;
+	flex-flow: row wrap;
+	margin: 0;
+   	padding: 0;
+	background: url(../bg2.png) repeat 0 0;
+	scroll-behavior: smooth;
+}
+
+main {
+	width: 100%;
+}
+
+.logo {
+	display: block;
+	margin-top: 10%;
+ 	margin-left: 5%;
+	width:45vw;
+    height:auto;
+	float:left;
+}
+
+#about-image {
+	float:left;
+	width: 45%;
+    height:auto;
+}
+
+#channels-image {
+	z-index: 0;
+	float:right;
+	width: 45%;
+	height: auto;
+}
+
+#about-panel {
+	border: 0px solid black;
+	border-radius: 10px;
+  	padding: 5%;
+  	margin-left: 50%;
+  	margin-right: 5%;
+	box-shadow: 10px 10px 15px silver;
+    background: white;
+    color: black;
+}
+
+#channels-panel {
+	z-index: 1;
+	border: 0px solid black;
+	border-radius: 10px;
+  	padding: 5%;
+  	margin-left: 5%;
+  	margin-right: 50%;
+	box-shadow: 10px 10px 15px silver;
+    background: white;
+    color: black;
+}
+
+#about-panel h1 {
+	float: none;
+	display: inline-block;
+	width: 100%;
+	border-bottom: 3px dashed silver;
+} 
+
+#channels-panel h1 {
+	float: none;
+	display: inline-block;
+	width: 100%;
+	border-bottom: 3px dashed silver;
+} 
+
+
+#events-panel {
+	border: 0px solid black;
+	border-radius: 10px;
+  	padding: 5%;
+  	margin-left: 5%;
+  	margin-right: 5%;
+	box-shadow: 10px 10px 15px silver;
+    background: white;
+    color: black;
+}
+
+.event {
+	display: flex;
+    justify-content: center;
+}
+
+.event * {
+	padding: 15px;
+	display: inline-block;
+	flex: 0 1 auto;
+}
+
+#events-panel h1 {
+	float: none;
+	display: inline-block;
+	width: 100%;
+	border-bottom: 3px dashed silver;
+} 
+
+header {
+	min-width: 100%;
+	height: 70%;
+	background: url(../bg.jpg) repeat 0 0;
+}
+
+nav {
+	display: flex;
+	min-width: 100%;
+	height: 6vw;
+	align-items: center;
+	justify-content: center;
+	border-top: 4px solid black;
+	border-bottom: 4px solid black;
+	background-color: black;
+	margin-bottom: 100px;
+	box-shadow: 10px 10px 15px silver;
+	flex-shrink: 0;
+    flex-grow: 1;
+}
+
+nav a span {
+	display: inline-block;
+	font-weight: bold;
+  	text-decoration: none;
+ 	color: white;
+  	margin: 0 2vw;
+  	padding: 10px;
+  	font-family: Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, monospace; font-size: 1.8vw; font-style: normal;
+  	transition: .1s;
+
+}
+
+nav a span:hover{
+  	outline: solid 4px white;
+}
+
+section {
+	height: 45%;
+}
+
+#typed-channels {
+	white-space: pre;
+}
+
+#start {
+	padding-top: 100px; 
+	margin-top: -100px;
+	transition: .2s;
+	width:15vw;
+    height:auto;
+}
+
+#start:hover {
+	width:16vw;
+}
+
+.next-bar {
+	font-family: Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, monospace; font-size: 0.9vw; font-style: normal;
+	width: 100%;
+	height: 0px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: black;
+	color: white;
+	visibility: hidden;
+
+}
+
+#next-event {
+	color: #f4e842;
+}
+
+.next-bar > input {
+	position: fixed;
+	right: 25%;
+	background-color: #f4e842;
+	color: black;
+	border-radius: 0;
+	font-family: Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, monospace; font-size: 18px; font-style: normal;
+	padding: 4px 10px;
+	border  : none;
+  	margin  : 0;
+	transition: .3s;
+}
+
+.scrolled{
+	transition: .3s;
+	height: 3vw;
+	padding: 20px 0 0 30%;
+	visibility: visible;
+}
+
+.jump-arrow-down {
+	width: 100%;
+	text-align: center;
+	animation: floating 2s infinite;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+	bottom: 0;
+	left: auto;
+	right: auto;
+}
+
+.jump-arrow-up {
+	display: block;
+	animation: floating 2s infinite;
+	position: relative;
+	margin-left: 50%;
+	margin-right: 50%;
+	margin-bottom: 5%;
+	color: black;
+}
+
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    50%  { transform: translate(0,  10px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+#calendar {
+	width:100%;
+    height:auto;
+
+}
+
+.next-event-box {
+	border-radius: 10px;
+  	padding: 20px;
+  	margin-top: 10%;
+  	margin-left: 55%;
+  	margin-right: 5%;
+    color: black;
+}
+
+.next-event-box h1 {
+	display: inline-block;
+	font-size: 5vw;
+	color: white;
+}
+
+.next-event-box h2 {
+	display: inline-block;
+	text-align: right;
+	font-size: 4vw;
+	color: white;
+}
+
+.next-event-box h3 {
+	display: inline-block;
+	padding: 0 20px;
+	font-size: 2.5vw;
+	color: white;
+	background: black;
+}
+
+.speaker {
+	padding: 20px;
+}
+
+.speaker {
+	width:10vw;
+    height:10vw;
+    border-radius:50%;
+	object-fit: cover;
+	overflow: hidden;
+}
+
+@media (max-width: 768px) {
+	p {
+		font-size: 1.5vw;
+	}
+
+	nav {
+		margin-bottom: 50px;
+	}
+
+    .speaker {
+    	width: 0;
+    	height: 0;
+    }
+
+    #about-image {
+    	width: 0;
+    	height: 0;
+    }
+
+    #channels-image {
+    	width: 0;
+    	height: 0;
+    }
+    
+    #about-panel {
+  		margin-left: 0;
+  		margin-right: 0;
+    	width: 90%;
+    }
+
+    #channels-panel {
+  		margin-left: 0;
+  		margin-right: 0;
+    	width: 90%;
+    }
+
+    .jump-arrow-down {
+    	visibility: hidden;
+    }
+
+    header {
+    	height: auto;
+    }
+}

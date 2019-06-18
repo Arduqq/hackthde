@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hackathons Thüringen</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+	<script>
+	
+	</script>
+</head>
+<body>
+	<div class="next-bar">$> next-event.sh -i <span id="next-event"></span> <input value="More Info" type="button"/></div>
+	<header id="top">
+		<img class="logo" src="hackthde.png">
+		<a target="__blank" href="https://www.meetup.com/de-DE/swkthde/events/259482144/"><div class="next-event-box">
+			<h3>Upcoming Hackathon:</h3>
+			<h1>Integration Testing with Citrus and Sakuli</h1>
+			<div class="speakers">
+				<img class="speaker" src="speaker1.jpg">
+				<img class="speaker" src="speaker2.jpg">
+			</div>
+		</div></a>
+		<a href="#start"><div class="jump-arrow-down"><i class="fa fa-chevron-down fa-5x" aria-hidden="true"></i></div></a>
+</div>
+	</header>
+	<nav>
+		<a href=""><span>> about_</span></a>
+		<a href=""><span>> channels_</span></a>
+		<a href="#top"><img id="start" src="hackthde.png"></a>
+		<a href=""><span>> events_</span></a>
+		<a href=""><span>> contact_</span></a>
+	</nav>
+	<main>
+		<section id="about">
+			<img class="moss" id="about-image" src="about.png">
+			<div id="about-panel">
+				<h1>$> Hackathons für <span id="typed-about"></span></h1>
+				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+			</div>
+		</section>
+
+		<section id="channels">
+
+			<img class="moss" id="channels-image" src="channels.png">
+			<div id="channels-panel">
+				<h1>$> Folge uns! <span id="typed-channels"></span></h1>
+				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+			</div>
+		</section>
+
+		<section id="events">
+			<div id="events-panel">
+				<h1> Events</h1>
+				<div class="event">
+					<p class="event-name">Ferienpass Hackathon</p><p class="event-description">Bei unserem ersten Hackathon möchten wir das Digitalisierungsprojekt Ferienpass des Kinderbüros der Stadt Weimar (www.kinderbuero-weimar.de/netzwerke/ferienpass.html) unterstützen und die Webanwendung vollends lauffähig machen. Die Studenten der Uni Weimar haben hierzu über 2 Semester hinweg bereits einiges an Vorarbeit geleistet und nun geht es an den Feinschliff. Alle Entwickler und Interessierten sind herzlich eingeladen dabei mitzuwirken!.</p><p class="event-links"><a href="hhttps://www.meetup.com/de-DE/hackthde/events/258489906/">Meetup</a></p>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<script>
+	   	var options = {
+	      	strings: ["Developer.", "Studenten.", "Begeisterte."],
+		    typeSpeed: 40,
+		    backDelay: 2000
+		}
+
+
+		var optionsNextEvent = {
+	      	strings: ["Testing-Hackergarten (Citrus und Sakuli)", "Wednesday, 5th of June 2019", "17 open slots"],
+		    typeSpeed: 40,
+		    loop: true,
+		}
+		var about = new Typed("#typed-about", options);
+		var typedEvent = new Typed("#next-event", optionsNextEvent);
+	</script>
+</body>
+
+	<script type="text/javascript" src="js/main.js"></script>
+</html>
